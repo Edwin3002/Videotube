@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+:root{
+    --black1: #181818;
+    --gray1: #6f6f6f;
+    --gray2: #373737;
+    --white1: #ffffff;
+}
+body{
+    background-color: var(--black1);
+    
+}
+header{
+    width: 95%;
+    background-color: mediumpurple;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+.barraBuscar{
+    display: flex;
+    align-items: center;
+}
+.buscar{
+    padding: 5px;
+    outline: none;
+    font-weight: 400;
+    width: 15rem;
+    border: 2px solid var(--gray1);
+    border-radius: 10px 0 0 10px ;
+    background-color: var(--black1);
+}
+.btnBuscar{
+    background-color: var(--gray1);
+    padding: 7px;
+    border: none;
+    border-radius: 0 5px 5px 0 ;
+    color: var(--white1);
+    width: 4rem;
+    cursor: pointer;
+}
+main{
+    width: 95%;
+    margin: 30px auto 0 auto;
+}
+.contFiltros{
+    display: flex;
+    gap: 25px;
+}
+.btnFiltros{
+    border: 1px solid var(--gray1);
+    border-radius: 20px;
+    padding: 8px;
+    background-color: var(--gray2);
+    color: var(--white1);
+    cursor: pointer;
+}
+.btnFiltros:hover{
+    transform: scale(1.05);
+}
+.active{
+    background-color: var(--white1);
+    color: var(--gray2);
+}
